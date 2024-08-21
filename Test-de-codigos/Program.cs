@@ -303,7 +303,8 @@ class Program
         // Convertir el monto de la moneda de origen a la moneda de destino
         double conversionTasa = matriz[Valormoneda, Valormonedadestino];
         double convertirmonto = monto * conversionTasa;
-        return convertirmonto;
+        return Math.Round(convertirmonto);
+        ;
     }
 
     public static void ConversorMasa(double[,] matriz)
